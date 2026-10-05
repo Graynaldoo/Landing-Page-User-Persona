@@ -1,0 +1,91 @@
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Custom Primary Color (Slightly adjusting Bootstrap primary) */
+:root {
+    --bs-primary: #e63946;
+    --bs-primary-rgb: 230, 57, 70;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+    background-color: #c92a36 !important;
+    border-color: #c92a36 !important;
+}
+
+.bg-primary-subtle {
+    background-color: rgba(230, 57, 70, 0.1) !important;
+}
+
+/* Navbar Enhancements */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #4a5568;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--bs-primary) !important;
+}
+
+/* Hero Section */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.1) !important;
+}
+
+.feature-icon-box {
+    width: 60px;
+    height: 60px;
+}
+
+/* Footer Links */
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fff !important;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--bs-primary), #a31c26);
+}
